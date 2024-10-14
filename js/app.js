@@ -3,6 +3,8 @@ let amigos = [];
 function adicionar() {
     //pegar o nome do amigo e colocar dentro de um array
     let nomeDoAmigo = document.getElementById ('nome-amigo').value;
+    //Para deixarmos uma palavra toda em letra maiúscula em um array, usamos o .toUpperCase()!
+    nomeDoAmigo = nomeDoAmigo.toUpperCase();
     if (nomeDoAmigo == '') {
         alert ('Informe o nome do amigo!');
         //Queremos parar o código aqui, iremos usar o "return". Poderíamos usar o "else" também!
