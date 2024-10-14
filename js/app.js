@@ -9,6 +9,12 @@ function adicionar() {
         return;
     };
 
+    if (amigos.includes(nomeDoAmigo)) {
+        //Queremos verificar se o nome já está adicionado neste array!
+        alert ('Informe o sobrenome para que não haja nomes iguais!');
+        return;
+    };
+
     let lista = document.getElementById('lista-amigos');
     amigos.push (nomeDoAmigo);
     if (lista.textContent == '') {
