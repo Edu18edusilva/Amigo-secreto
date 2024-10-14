@@ -21,6 +21,12 @@ function adicionar() {
 };
 
 function sortear() {
+    //Para descobrirmos o valor total de um array, usamos o .length!
+    if (amigos.length < 4) {
+        alert ('Adicione pelo menos 4 amigos!');
+        return;
+    }
+
     //escrever um código que embaralha esse array, algoritmo de Fisher-Yates
     embaralhar(amigos);
     console.log(amigos);
