@@ -3,6 +3,12 @@ let amigos = [];
 function adicionar() {
     //pegar o nome do amigo e colocar dentro de um array
     let nomeDoAmigo = document.getElementById ('nome-amigo').value;
+    if (nomeDoAmigo == '') {
+        alert ('Informe o nome do amigo!');
+        //Queremos parar o código aqui, iremos usar o "return". Poderíamos usar o "else" também!
+        return;
+    };
+
     let lista = document.getElementById('lista-amigos');
     amigos.push (nomeDoAmigo);
     if (lista.textContent == '') {
